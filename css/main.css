@@ -1,0 +1,68 @@
+/*Name= Manoj Belbase
+Student no. 8903838*/
+body{
+    width:90vw ;
+    max-width: 100vw;
+    font:normal 20px georgia,Arial,sans-serif ;
+    margin: 0 auto; 
+    padding: 10px; 
+    background-color: #ded758;
+}
+.structural{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+h1,h2{
+    color:rgb(238, 15, 15) ;
+    font: small-caps;
+}
+footer p{
+    font-size: 14px;
+    color: rgb(31, 8, 199);
+}
+main{
+    float: left;
+    width: 66.66%;
+    padding:9px;
+    margin: 10px; 
+  
+}
+aside{
+    float:right;
+    padding:9px;
+    margin:12px;
+
+
+}
+footer{
+    clear: both;
+}
+.mainimg{
+    border: 3.5px solid rgb(46, 25, 205);
+    width: 350px;
+}
+figcaption{
+    font-style: bold;
+    font-variant: small-caps;
+}
+
+q{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.1em;
+}
+ul li{
+    list-style: none;
+    line-height:1.8em;
+}
+ul>li>a{
+    text-decoration: none;
+    color: rgb(0, 165, 39);
+}
+a:hover{
+    color:rgb(2, 29, 20);
+}
