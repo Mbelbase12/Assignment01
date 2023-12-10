@@ -1,68 +1,354 @@
 /*Name= Manoj Belbase
 Student no. 8903838*/
 body{
-    width:90vw ;
+    width:96.5vw ;
     max-width: 100vw;
-    font:normal 20px georgia,Arial,sans-serif ;
+    font:normal 1rem georgia,Arial,sans-serif ;
+    line-height: 1.6;
     margin: 0 auto; 
-    padding: 10px; 
-    background-color: #ded758;
+    padding: 1rem; 
+    background: color #bcdef5;
 }
-.structural{
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-}
-
-h1,h2{
-    color:rgb(238, 15, 15) ;
-    font: small-caps;
+footer{
+  clear: both;
 }
 footer p{
-    font-size: 14px;
-    color: rgb(31, 8, 199);
+  font-size: 14px;
+  color: rgb(223, 222, 218);
 }
 main{
     float: left;
-    width: 66.66%;
-    padding:9px;
-    margin: 10px; 
-  
+    width: 73vw;
+    margin: 0.2rem;
+    padding:0.2rem;
+    background-color: rgb(130, 85, 130);
+    border-radius: 0.625rem;
+    height: auto;
 }
+main p{
+    color: aliceblue;
+}
+h1,h2{
+    color:white ;
+    font: small-caps;
+    text-align: center;  
+}
+
+
+table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+  }
+  td, th{
+    border: 1px solid black;
+  }
+  th{
+    background-color: rgb(239, 255, 173);
+  }
+  td{
+    background-color: rgb(127, 204, 255);
+  }
+
+
+
+
+  header,footer{
+    background: linear-gradient(to right, #5397c1,#154360);
+    border-radius: 0.625rem;
+    padding: 2rem 0; 
+    
+  }
+  footer{
+    text-align: center;
+  }
+  
+.head{
+  font-size: 2.5rem;
+  color:yellow;
+  text-align: left;
+}
+
+  nav ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+  }
+ 
+  
+  nav{
+ 
+    max-width: 1100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+
+  .lmenu > li, .lmenu> a{
+    display:inline-block;
+  }
+  .lmenu li{
+    position: relative;
+  }
+
+  .lmenu a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 1.5rem;
+    margin-right: 3rem;
+    border: 2px solid red;
+    border-radius: 10px;
+    transition: background-color .22s ease, color .22s ease;
+  }
+
+
+  .lmenu a:hover{
+    background-color: #f34949;
+    color:#fff;
+  }
+  .submenu{
+    position:absolute;
+    background-color:#154360;
+    width:auto;
+    left:0;
+    z-index: 999;
+    display: none;
+  }
+  .lmenu li:hover .submenu{
+    display: block;
+  }
+.submenu a{
+  width: auto;
+  display: block;
+  color:#fff;
+  text-decoration: none;
+}
+.submenu a:hover{
+  color: azure;
+  background-color: #f34949;
+  color:fff;
+}
+
+
+.submenu li {
+  margin: 10px;
+}
+
+
+
 aside{
     float:right;
-    padding:9px;
-    margin:12px;
+    padding:0.2rem;
+    margin:0.2rem;
+    width:21.82vw ;
+    height:100%;
+    border-radius: 0.625rem;
+    background-blend-mode:normal;
+    background:rgba(101, 104, 104, 0.5) url("/image/aside.png") right top / cover;
+    backdrop-filter: blur(100%);
+}
+aside h2{
+    color:#fff;
+    border-bottom: 2px solid rgb(238, 119, 7);
+    padding-bottom: 0.5rem;
+}  
+  aside ul li a{
+    color:#fff;
+}
 
 
+
+
+.photo{
+    border: 3px solid rgb(11, 224, 114);
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    shape-margin: 2 rem;
 }
-footer{
-    clear: both;
-}
-.mainimg{
-    border: 3.5px solid rgb(46, 25, 205);
-    width: 350px;
+p{display: inline;}
+
+
+.image{
+  float: left;
+  shape-outside: circle();
+  margin-right: 1em;
 }
 figcaption{
     font-style: bold;
     font-variant: small-caps;
+    color:lightgoldenrodyellow;
 }
+
 
 q{
     font-family: cursive;
     font-style: italic;
     font-size: 1.1em;
 }
-ul li{
-    list-style: none;
-    line-height:1.8em;
+.quotes p a cite{
+  color:aliceblue;
 }
-ul>li>a{
-    text-decoration: none;
-    color: rgb(0, 165, 39);
+
+
+
+
+
+/*contact*/
+
+form{
+  background-color: #f34949;
+  height: 100%;
+    border: 0.313rem dashed rgb(26, 4, 127);
+    padding: 0.313rem;
+  }
+  input[type=text],
+  input[type=email], 
+  input[type=submit],
+  select,option{
+    width: calc(100%-1rem);
+    display: block;
+    height: 2em;
+    margin-bottom: 1 rem;
+  }
+  input[type=radio], 
+  input[type=checkbox]{
+    height: 2em;
+    width: 2em;
+  }
+  select,
+  option,
+  label,
+  legend,
+  input[type=submit]{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  textarea{
+    width: calc(100%-1rem);
+    display: block;
+    margin-bottom: 1rem;
+  }
+  fieldset{
+    border: none;
+  }
+
+/*gallery.html*/
+
+.structural {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+  padding: 1.8rem;
 }
-a:hover{
-    color:rgb(2, 29, 20);
+
+.structural img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img1{
+  clip-path:polygon(92.79% 99.74%, 64.32% 63.96%, 75.29% 38.45%, 64.25% -0.52%, 39.33% 2.44%, 31.65% 25.96%, 30.92% 56.18%, 10.46% 65.75%, 10% 100%);
+}
+.img2{
+  clip-path: polygon(81.95% 95.69%, 67.46% 57.24%, 74.32% 46.66%, 78.6% 16.16%, 70.31% -1.02%, 39.61% 16.82%, 5.35% 22.54%, 10% 50%, 10% 100%);
+}
+.img3{
+  clip-path: polygon(86.54% 100.47%, 97.21% 73.88%, 73.86% 49.14%, 76.58% 30.19%, 70.31% -1.02%, 26.48% 4.02%, 26.01% 40.25%, 36.28% 66.46%, 10% 100%, 53.44% 100.47%);
+}
+.img4{
+  clip-path: polygon(83.32% 99.83%, 83.37% 73.48%, 74.72% 49.45%, 60.22% 32.39%, 52.85% 9.86%, 37.05% 9.91%, 31.42% 24.38%, 38.03% 36.29%, 17.81% 33.23%, 17.05% 55.42%, 11.25% 75.27%, 24.87% 82.6%, 22.86% 100.91%);
+}
+.img5{
+  clip-path: polygon(83.32% 99.83%, 83.37% 73.48%, 74.72% 49.45%, 60.22% 32.39%, 52.85% 9.86%, 37.05% 9.91%, 31.42% 24.38%, 38.03% 36.29%, 17.81% 33.23%, 17.05% 55.42%, 11.25% 75.27%, 24.87% 82.6%, 22.86% 100.91%);
+}
+.img6{
+  clip-path:polygon(86.54% 98.59%, 72.44% 80.17%, 79.61% 61.81%, 80.07% 44.25%, 79.04% 29.57%, 78.36% 16.66%, 76.67% 7.26%, 66.32% -0.49%, 50.09% -0.07%, 22.56% 7.43%, 12.22% 37.31%, 15.4% 68.96%, 0.81% 75.73%, 0.81% 100%);
+}
+.img7{
+  clip-path: polygon(86.54% 103.00%, 82.73% 27.86%, 70.31% -1.02%, 26.48% 4.02%, 10% 50%, 10% 100%);
+}
+.img8{
+  clip-path: polygon(76.45% 81.98%, 82.73% 27.86%, 78.16% -0.02%, 5.17% 5.02%, 24.58% 50%, 10% 100%);
+}
+.img9{
+  clip-path: polygon(83.18% 96.26%, 75.16% 80.01%, 56.48% 75.75%, 82.73% 27.86%, 70.31% -1.02%, 26.48% 4.02%, 10% 50%, 10% 100%);
+}
+
+.circular-image {
+ 
+  margin: 0 20px 20px 0;
+  shape-outside: circle();
+}
+
+.content p {
+  text-align: justify;
+  margin-top: 0;
+}
+
+
+
+
+
+/*responsive*/
+@media(max-width:1455px){
+  html{
+    font-size:12px ;
+    
+  }
+  body{
+    display: block;
+  }
+  main{
+    margin: 0%;
+  }
+  aside{
+    margin: 0%;
+    background-image: url("/image/aside 01.png");
+  }
+
+}
+@media (max-width: 780px) {
+  html {
+    font-size: 10px;
+  }
+  .photo{
+    height: 25vh;
+    width: 25vw;
+  }
+  main{
+    display: block;
+    width: 60vw;
+  }
+  section{
+      display: block;
+  }
+  main{
+    margin: 0%;
+  }
+  aside{
+    margin: 0%;
+    font-size: 7px;
+    width: 23vw;
+    background-image: url("/image/aside 02.jpg");
+  }
+  .structural {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  
+}
+@media (max-width: 768px){
+  form{
+    padding:1rem;
+  }
 }
